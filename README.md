@@ -1,4 +1,4 @@
-# Node-dashboard-statuses
+# Node-dashboard-monitor
 
 Login/Register application with authentication.
 
