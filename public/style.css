@@ -1,0 +1,32 @@
+.body {
+    background-color: #8ccbff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.card {
+    width: 400px;
+    height: 150px;
+    color: #ccc;
+}
+
+.card h3, p {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.button {
+    color: blue;
+    border-radius: 10px;
+}

@@ -19,10 +19,6 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/dashboard', require('./routes/dashboard'));
 
-app.use(express.static(__dirname + '/public'));
-
-// app.use('/', require('./routes/index'));
 const PORT = process.env.PORT || 5000;
-
 app.listen(PORT, console.log(`Server started on ${PORT}`));
 
