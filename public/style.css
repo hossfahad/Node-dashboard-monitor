@@ -1,32 +1,59 @@
-.body {
-    background-color: #8ccbff;
+body {
+    background-color: #314058;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 960px;
 }
 
 .container {
+    max-width: 960px;
     margin: 0 auto;
-    max-width: 1120px;
+    transform: translateY(50%);
 }
 
 .card {
-    width: 400px;
-    height: 150px;
-    color: #ccc;
+    background-color: #1b2331;
+    border-radius: 10px; 
 }
 
-.card h3, p {
+.form-group {
+    padding: 10px;
+    display: block;
+}
+
+h1, h2, h3, p, label {
     font-family: Helvetica;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input {
+    width: 40%;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
     text-align: center;
-}
-
-.card h3 {
-    font-size: 16px;
-}
-
-.card p {
-    font-size: 12px;
-}
-
-.button {
-    color: blue;
-    border-radius: 10px;
 }

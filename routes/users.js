@@ -2,13 +2,21 @@ const express = require('express');
 const router = express.Router();
 
 // Login and Register Page
-router.get('/login', (req, res) => res.render('login'));
-router.get('/register', (req, res) => res.render('register'));
+router.get('/login', (req, res) => 
+    res.render('login', {
+        title: 'Dashboard Authentication Login'
+    }
+));
+router.get('/register', (req, res) => 
+    res.render('register', {
+    title: 'Dashboard Auth Registration'
+    }
+));
 
 // Registration Data
 router.post('/register', (req, res) => {
     const {
-        name,
+        username,
         email,
         password,
         password2
@@ -16,7 +24,7 @@ router.post('/register', (req, res) => {
     let errors = [];
 
     // Form requirements
-    if (!name || !email || !password || !password2) {
+    if (!username || !email || !password || !password2) {
         errors.push({
             msg: 'Please fill in the required fields'
         })
